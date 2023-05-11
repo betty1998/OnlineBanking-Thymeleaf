@@ -1,0 +1,12 @@
+body{
+    height:100vh;
+    position: center;
+    background-color: #92a8d1;
+    background-size: cover;
+    background-position: center center;
+}
+
+.btn-custom{
+    width: 40px;
+    padding: 10px;
+}
