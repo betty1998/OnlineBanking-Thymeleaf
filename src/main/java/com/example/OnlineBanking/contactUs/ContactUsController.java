@@ -16,13 +16,17 @@ public class ContactUsController {
 
     @GetMapping()
     public String showContactUsForm(Model model) {
+        log.info("showContactUsForm in ContactUsController");
+        model.addAttribute(new ContactUsForm());
         return "contactus";
     }
 
     @PostMapping("/submit")
-    public String submitContactForm(@ModelAttribute("contactUsForm") ContactUsForm form) {
+    public String submitContactForm(@RequestParam("name") String formName,
+                                    @RequestParam("email") String formEmail,
+                                    @RequestParam("message") String formMessage) {
         log.info("submitContactForm in ContactUsController");
-        contactUsService.saveForm(form);
+        contactUsService.saveForm(new ContactUsForm(formName,formEmail,formMessage));
         return "redirect:/contactus/success";
     }
 
