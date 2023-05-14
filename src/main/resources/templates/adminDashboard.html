@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Admin Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<!------------------------------- Navbar ---------------------------->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Online Banking</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/aboutus">About Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/bank-services/apply">Apply</a></li>
+            <li><a class="dropdown-item" href="/bank-services/track">Track Application</a></li>
+            <li><hr class="dropdown-divider"></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/converter">Currency Converter</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contactus">Contact Us</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/login">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/register">Register</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  <h2>Admin Dashboard</h2>
+
+  <div class="row">
+    <div class="col-md-4">
+      <h4>Account Management</h4>
+      <ul class="list-group">
+        <li><a href="#">View Account Services</a></li>
+        <li><a href="#">Add Account Service</a></li>
+        <li><a href="#">Update Account Service</a></li>
+        <li><a href="#">Delete Account Service</a></li>
+        <li><a href="#">View User Accounts</a></li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <h4>Credit Card Management</h4>
+      <ul class="list-group">
+        <li><a href="#">View Credit Card Services</a></li>
+        <li><a href="#">Add Credit Card Service</a></li>
+        <li><a href="#">Update Credit Card Service</a></li>
+        <li><a href="#">Delete Credit Card Service</a></li>
+        <li><a href="#">View User Credit Cards</a></li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <h4>Loan Management</h4>
+      <ul class="list-group">
+        <li><a href="#">View Loan Services</a></li>
+        <li><a href="#">Add Loan Service</a></li>
+        <li><a href="#">Update Loan Service</a></li>
+        <li><a href="#">Delete Loan Service</a></li>
+        <li><a href="#">View User Loans</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row mt-5">
+    <div class="col-md-4">
+      <h4>Application Management</h4>
+      <ul class="list-group">
+        <li><a href="#">View Bank Service Applications</a></li>
+        <li><a href="#">Approve Bank Service Application</a></li>
+        <li><a href="#">Reject Bank Service Application</a></li>
+        <li><a href="#">Require Further Action</a></li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <h4>Customer Management</h4>
+      <ul>
+        <li><a href="#">View Customers</a></li>
+        <li><a href="#">Activate Customer</a></li>
+        <li><a href="#">Deactivate Customer</a></li>
+        <li><a href="#">View Transactions</a></li>
+        <li><a href="#">Add Payment</a></li>
+        <li><a href="#">Deposit/Withdraw Money</a></li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <h4>Profile Management</h4>
+      <ul class="list-group">
+        <li><a href="#">Update Profile</a></li>
+        <li><a href="#">Change Password</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="bg-light text-center py-3">
+  <p> &copy; 2023 Online Banking. All rights reserved.</p>
+</footer>
+</body>
+
+
+
+</html>
+

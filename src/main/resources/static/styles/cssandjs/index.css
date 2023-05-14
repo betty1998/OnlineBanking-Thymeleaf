@@ -1,0 +1,22 @@
+#mainContainer{
+    height:80vh;
+    position: center; 
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} 
+h1{
+    text-align: center;
+    margin: 50% 50%;
+}
+.btn{
+    width: 150px;
+}
+
+.card{
+    width: 30rem;
+    height: 25rem;
+}

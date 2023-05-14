@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Customer Dashboard</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+<!------------------------------- Navbar ---------------------------->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Online Banking</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/aboutus">About Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/bank-services/apply">Apply</a></li>
+            <li><a class="dropdown-item" href="/bank-services/track">Track Application</a></li>
+            <li><hr class="dropdown-divider"></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/converter">Currency Converter</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contactus">Contact Us</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/login">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/register">Register</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  <h2>Customer Dashboard</h2>
+
+  <div class="row">
+    <div class="col-md-6">
+      <h4>Accounts</h4>
+      <ul class="list-group">
+        <!-- Iterate over the customer's accounts -->
+        <li class="list-group-item"><a href="#">Account 1</a></li>
+        <li class="list-group-item"><a href="#">Account 2</a></li>
+        <li class="list-group-item"><a href="#">Account 3</a></li>
+        <!-- Add more accounts as needed -->
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <h4>Credit Cards</h4>
+      <ul class="list-group">
+        <!-- Iterate over the customer's credit cards -->
+        <li class="list-group-item"><a href="#">Credit Card 1</a></li>
+        <li class="list-group-item"><a href="#">Credit Card 2</a></li>
+        <li class="list-group-item"><a href="#">Credit Card 3</a></li>
+        <!-- Add more credit cards as needed -->
+      </ul>
+    </div>
+  </div>
+
+  <div class="row mt-5">
+    <div class="col-md-6">
+      <h4>Loans</h4>
+      <ul class="list-group">
+        <!-- Iterate over the customer's loans -->
+        <li class="list-group-item"><a href="#">Loan 1</a></li>
+        <li class="list-group-item"><a href="#">Loan 2</a></li>
+        <li class="list-group-item"><a href="#">Loan 3</a></li>
+        <!-- Add more loans as needed -->
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <h4>Transactions and Payments</h4>
+      <ul class="list-group">
+        <li class="list-group-item"><a href="#">View Account Transactions</a></li>
+        <li class="list-group-item"><a href="#">View Credit Card Transactions</a></li>
+        <li class="list-group-item"><a href="#">View Loan Payments</a></li>
+        <li class="list-group-item"><a href="#">Perform Fund Transfer</a></li>
+        <li class="list-group-item"><a href="#">View Payment Statements</a></li>
+        <li class="list-group-item"><a href="#">Pay Credit Card</a></li>
+        <li class="list-group-item"><a href="#">Pay Loan</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="bg-light text-center py-3">
+  <p> &copy; 2023 Online Banking. All rights reserved.</p>
+</footer>
+</body>>
+</html>
