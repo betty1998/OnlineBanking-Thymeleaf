@@ -1,5 +1,6 @@
-package com.example.OnlineBanking.model;
+package com.example.OnlineBanking.bankService;
 
+import com.example.OnlineBanking.bankService.BankService;
 import lombok.Data;
 
 @Data
